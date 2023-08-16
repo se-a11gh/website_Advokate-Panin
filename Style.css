@@ -5,7 +5,7 @@
     list-style: none;
     font-family:"CLEANVEL";
 }
-h1, h2, h3, h4{
+h1, h2, h4, h5{
     width: 100%;
     height: 40px;
     background-color: rgb(5, 5, 5);
@@ -21,12 +21,20 @@ h1, h2, h3, h4{
     --index:calc(1vw + 1vh);
 }
 
+body.page_lock{  overflow: hidden; }
+
+
 @font-face {
     font-family:"CLEANVEL";
     src:url("fonts/CLEANVEL.TTF");
     font-display: swap;
     font-style: normal;
 }
+
+.wrap_feedback{
+    display: none;
+}
+
 
 /*---------------------------------------------------------------- Боковое меню и PopUp ---------------------------*/
 .fon_popUp, .fon_aside_menu{
@@ -283,22 +291,35 @@ h1, h2, h3, h4{
    overflow: hidden;
 }
 .panin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 55%;
 }
+.panin img{
+    width: 137%;
+    height: auto;
+}
+
+
 .bl_about{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 40%;
     height: 550px;
     padding: 10px;
+    box-sizing: border-box;
 }
 .bl_about p{
-    font-size: calc(var(--index) * 1.2);
-    width: 90%;
-    height: 320px;
-    padding: 10px;
+    font-size: 24px;
+    width: 500px;
+    padding: 35px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px gray;
+    background-color: white;
 }
 .btn_pan, .btn_form, .btn_expert, .btn_ask{
     background-color: #D84949;
@@ -311,6 +332,10 @@ h1, h2, h3, h4{
     font-size: 20px;
     border-radius: 3px;
 }
+.btn_pan{
+    width: 500px;
+}
+
 .btn_pan:hover, .btn_form:hover, .btn_expert:hover, .btn_ask:hover{
     background-color: #c10000;
 }
@@ -325,13 +350,11 @@ h1, h2, h3, h4{
 .btn_expert{
     width: 100%;
     height: 43px;
-
 }
 
 
 
-/*---------------------------------------------------------------------------------------------------------*/
-.Block_1{ /*####*/
+.Block_1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -339,7 +362,8 @@ h1, h2, h3, h4{
     height: 637px;  
     background-image: url("media/fon.png");
     background-repeat: no-repeat;
-    background-size: 120% auto;
+    background-size: cover;
+    background-position: center;
 }
 .group_btn{
     display: flex;
@@ -350,88 +374,79 @@ h1, h2, h3, h4{
     height: 430px;
     margin-top: 85px;
 }
-.btn_serv, .btn_tema, #btn_exp_ask, .btn_feed{
+.btn_serv{
     width: 320px;
-    height: 100px;
+}
+.btn_more, .btn_exp_ask{
+    display: none;
+    width: 93%;
+    margin-bottom: 10px;
+}
+
+.btn_serv a, .btn_more a, .btn_exp_ask a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
     background: #2A3E5C;
     box-shadow: 0px 3px 42px rgba(0, 186, 229, 0.28);
-    border-radius: 6px;
     border: none;
     font-size: 20px;
-    color: white;
     cursor: pointer;
     transition: background 0.9s;
 }
-
-.btn_serv:hover, .btn_tema:hover, #btn_exp_ask:hover{
+.btn_serv a:hover, .btn_more a:hover, .btn_exp_ask a:hover{
     background: #D84949;
 }
-.btn_feed{
-    width: 478px;
-    height: 40px;
-}
 
-/*--------------------------------------------------------------------------*/
+
+
 
 
 .Block_2{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
-    height: 650px;  
 }
 
-.block_succ_1, .block_succ_2{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 300px; 
-}.block_succ_2{
-    width: 98%;
+.succ_bl{
+    width: 400px;
+    height: 350px;
+    margin: 10px 0px 10px 0px;
 }
-
-.box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: width 1s;
-    width: calc(98% / 3);
-    background-repeat: no-repeat;
-    background-size: 100% 300px;
-}.box:hover{
-    width: 35%;
-}
-.box p{
+.succ_descrip{
+    position: relative;
+    top: -115px;
     width: 100%;
-    height: auto;
-    background: rgba(16, 36, 55, 0.7);
+    height: 110px;
+    background: rgba(15, 11, 43, 0.7);
     color: white;
     padding: 5px;
     box-sizing: border-box;
-}.box p a{
+}
+.succ_descrip__head{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.succ_descrip_foot a{
     color: white;
-    text-decoration: underline;
 }
-.box p span{/*-------------------------------------------------------------------------------------------------------------------------*/
-    font-size: 13px;
-}
-.box_1 { background-image: url("media/sud1.jpg");}
-.box_2 { background-image: url("media/sud2.jpg");}
-.box_3 { background-image: url("media/sud3.webp");}
-.box_4 { background-image: url("media/sud4.webp");}
-.box_5 { background-image: url("media/sud5.jpg");}
-.box_X{
-    display: none;
-    box-shadow: 0px 3px 42px rgb(0 186 229 / 28%);
+.succ_bl img{
+    width: 100%;
+    height: 350px;
 }
 
 
 
 
 
-/*--------------------------------------------------------------------------*/
-.Block_3{ /*####*/
+.Block_3{ 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -439,7 +454,7 @@ h1, h2, h3, h4{
     width: 100%;
     height: 700px;
 }
-.bl_expert_1, .bl_expert_2{ /*####*/
+.bl_expert_1, .bl_expert_2{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -467,7 +482,6 @@ h1, h2, h3, h4{
 
 
 
-/*------------------------------------------------------------------------*/
 .Block_5{
     display: flex;
     flex-direction: column;
@@ -475,10 +489,6 @@ h1, h2, h3, h4{
     justify-content: space-around;
     height: auto;
 }
-#btn_exp_ask{
-    display: none;
-}
-
 .block_ask{
     display: flex;
     justify-content: space-around;
@@ -495,7 +505,7 @@ h1, h2, h3, h4{
     border-left: 2px solid #12305e;
 }
 .bl_ask p{
-   margin-top: 10px;
+   margin: 10px;
    border-bottom: 1px solid;
    text-align:center;
    cursor: pointer;
@@ -515,9 +525,7 @@ h1, h2, h3, h4{
 
 
 
-
-/*------------------------------------------------------------------------*/
-#footer_main { /*####*/
+#footer_main { 
     display: flex;
     flex-direction: column;
     justify-content:space-around;
@@ -527,7 +535,7 @@ h1, h2, h3, h4{
     background-color: #1D1B1B;
     color: white;
 }
-.wrap_foter{ /*####*/
+.wrap_foter{ 
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -535,20 +543,18 @@ h1, h2, h3, h4{
 }
 .menu_foter{
     width: 30%;
-    height: 260px;
 }
-.menu_foter ul{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    font-size: 21px;
+.menu_foter ul:first-child{
+    font-size: 23px;
+    line-height: 35px;
+    font-weight: bold;
+    color: white;
 }
-.menu_foter ul li{
+.menu_foter ul li a{
     font-size: 17px;
     margin-top: 10px;
     color: white;
+    font-weight: normal;
 }
 .logo_foter{
     display: flex;
@@ -563,7 +569,7 @@ h1, h2, h3, h4{
 }
 .contacts_foter{
     display: flex;
-    width: 30%;
+    width: 300px;
 }
 .links{
     display: flex;
@@ -577,11 +583,13 @@ h1, h2, h3, h4{
     height: 30px;
 }
 .adress{
-    font-size: 21px;
+    font-size: 23px;
+    font-weight: bold;
     width: 80%;
-    height: 180px;
+    height: 165px;
 }
 .adress p{
     font-size: 17px;
     line-height: 30px;
+    font-weight: normal;
 }

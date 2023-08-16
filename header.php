@@ -7,8 +7,8 @@
     <!----------
     подкл. теги для SEO    
     ------>
-    <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="page_Style.css">
+    <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="Adaptive.css">
     <title>Panin</title>
 </head>
@@ -20,7 +20,7 @@
 <div class="fon_popUp">
     <div class="bl_consult">
         <div class="headConsl"><p>Залишіть заявку</p><img class="btn_close_pop" src="media/wClose.png" alt=""></div>
-        <form class="block_form" action="" method="post">
+        <form class="block_form" action="#" method="post">
             <input type="text" placeholder="Ваше ім'я">
             <input type="text" placeholder="Ваш телефон">
             <textarea id="textSizeArea" placeholder="Коротко опишіть проблему"></textarea>
@@ -44,10 +44,10 @@
                     </div>
 
                     <ul class="aside_menu_list">
-                    <a href="page_categ.php"><li class="wrap_btns">Наш спектр послуг</li></a>
-                        <a href="page_asks.php"><li class="wrap_btns">Наші успіхи</li></a>
-                        <a href="page_categ.php"><li class="wrap_btns">Наші фахівці</li></a>
-                      <a href="page_asks.php"><li class="wrap_btns">Питання юристу</li></a>
+                    <li class="wrap_btns"><a href="page_categ.php">Наш спектр послуг</a></li>
+                    <li class="wrap_btns"><a href="page_asks.php">Наші успіхи</a></li>
+                    <li class="wrap_btns"><a href="page_categ.php">Наші фахівці</a></li>
+                    <li class="wrap_btns"><a href="page_asks.php">Питання юристу</a></li>
                     </ul>
 
                 <div class="aside_menu_footer">
@@ -69,7 +69,6 @@
 
 <header id="head_1"> 
     <div class="menuB"> <img class="btn_menu" src="media/menu.png" alt="кнопка меню"> </div>
-    <!--  -->
   <div class="logo"> 
   <a href="Main.php"> <img src="media/femida.png" alt=""></a>
   <a href="Main.php"><p>"Панін та партнери"</p> </a>
@@ -87,5 +86,3 @@
         </div>
     </div>
 </header>
-
-

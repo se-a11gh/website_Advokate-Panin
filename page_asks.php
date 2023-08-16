@@ -1,4 +1,5 @@
 <?php require('header.php');?>
+<style>.wrap_feedback{ display: flex;}</style>
 
     <div class="breadcrams_ask">
         <div class="breadcrams_link"> <img src="media/home.png" alt=""> <p> | Запитання / відповіді</p></div>
@@ -9,43 +10,45 @@
     <div class="askForm_block">
     <img class="btnCloseAskForm" src="media/wClose.png" alt="">
         <p>Запитайте юриста</p>
-        <form class="askForm" action="" method="post">
-            <div class="formName">
-            <label for="">Ваше ім'я</label><br>
-            <input type="text">
-            </div>
-            <div class="formName">
-            <label for="">Виберіть категорію</label>
-            <select name="" id="">
-            <option value="1">Питання нерухомості</option>
-            <option value="2">Сімейне право</option>
-            <option value="3">Кримінальне право</option>
-            </select>
-            </div>
 
-            <div class="formText">
-            <label for="">Коротко опишіть проблему</label>
-            <textarea name="" id="textAskArea" cols="70" rows="10" > </textarea>
-            </div>
-            <input class="sendAsk" type="submit" value="Задати питання">
-        </form>
+        <form class="askForm" action="#" method="post">
+        <div class="formName">
+        <label>Ваше ім'я</label><br>
+        <input type="text">
+        </div>
+        <div class="formName">
+        <label>Виберіть категорію</label>
+        <select>
+        <option value="1">Питання нерухомості</option>
+        <option value="2">Сімейне право</option>
+        <option value="3">Кримінальне право</option>
+        </select>
+        </div>
+
+        <div class="formText">
+        <label>Коротко опишіть проблему</label>
+        <textarea id="textAskArea" cols="70" rows="10" > </textarea>
+        </div>
+        <input class="sendAsk" type="submit" value="Задати питання">
+    </form>
     </div>
 </div>
 
 
 
 <div class="wrap_filter_asks">
-    <div class="">
+    <div>
     <b>Фільтр по темі:</b>
-    <select class="selectCatg_1" name="" id="">
+    <select class="selectCatg_1">
         <option value="1">Питання нерухомості</option>
         <option value="2">Сімейне право</option>
         <option value="3">Кримінальне право</option>
     </select>
     </div>
-  <div class="">
+
+  <div>
   <b>Сортування:</b>
-    <select class="selectCatg_2" name="" id="">
+    <select class="selectCatg_2">
         <option value="1">Від нових до старих</option>
         <option value="2">Від старих до нових</option>
     </select>
@@ -247,16 +250,7 @@
     <a href=""><p>...</p></a>
     <a href=""><p>15</p></a>
     </div>
-
 </main>
-
-
-
-<section class="wrap_feedback">
-    <p>Закон написаний людьми і для людей. Якщо ви зіткнулися з несправедливістю, то ми допоможемо вам її відновити!</p>
-    <p>Ваші “Панін та партнери”</p>
-</section>
-
 
 <?php require('footer.php')?>
 

@@ -1,7 +1,13 @@
 <?php require('header.php')?>
 
 <main id="main_1">
-    <img class="panin" src="media/panin.webp" alt="Олексій Панін">
+
+<picture class="panin">
+<source srcset="media/paninDark.jpg" media="(max-width: 800px)">
+<img src="media/panin.webp" alt=""> 
+</picture>
+
+
     <div class="bl_about">
         <p>
             Ми <b>«Панін та партнери»</b>. <br>
@@ -23,15 +29,15 @@
 <section class="Block_1">
     <h1>Наш спектр услуг</h1>
     <div class="group_btn">
-    <a href="page_categ.php"><button class="btn_serv" type="button">Фіз. особам</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Бізнесу</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Кримінальне право</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Підготовка документів</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Питання нерухомості</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Нотаріальні послуги</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Захист у суді</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Сімейне право</button></a>
-    <a href="page_categ.php"><button class="btn_serv" type="button">Іноземним громадянам</button></a>
+    <div class="btn_serv"><a href="page_categ.php">Фіз. особам</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Бізнесу</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Кримінальне право</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Підготовка документів</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Питання нерухомості</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Нотаріальні послуги</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Захист у суді</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Сімейне право</a></div>
+    <div class="btn_serv"><a href="page_categ.php">Іноземним громадянам</a></div>
     </div>
 </section>
 
@@ -39,56 +45,89 @@
 
 <section class="Block_2">
     <h2>Наші успіхи</h2>
-    <div class="block_succ_1">
-        <div class="box box_1">
-            <p><b>Вирішення питання щодо оренди</b><br><span>Редакція за 21.01.23</span></p>
-            <p>
-                Нещодавно до нашого Адвокатського бюро звернулася
-                будівельна компанія (м. Київ) за правовою ... <br><a href="page_asks.php">Читати далі</a>
-            </p>
-        </div>
-        <div class="box box_2">
-            <p><b>Вирішення питання щодо оренди</b><br><span>Редакція за 03.03.23</span></p>
-            <p>
-                Нещодавно до нашого Адвокатського бюро звернулася
-                будівельна компанія (м. Київ) за правовою ... <br><a href="page_asks.php">Читати далі</a>
-            </p>
-        </div>
-        <div class="box box_3">
-            <p><b>Вирішення питання щодо оренди</b><br><span>Редакція за 15.01.23</span></p>
-            <p>
-                Нещодавно до нашого Адвокатського бюро звернулася
-                будівельна компанія (м. Київ) за правовою ... <br><a href="page_asks.php">Читати далі</a>
-            </p>
-        </div>
-        <div class="box_X"><button class="btn_tema" type="button">Ще матеріали</button></div>
-    </div>
 
-    <div class="block_succ_2">
-        <div class="box box_4">
-        <p><b>Вирішення питання щодо оренди</b><br><span>Редакція за 03.02.23</span></p>
-        <p>
-            Нещодавно до нашого Адвокатського бюро звернулася
-            будівельна компанія (м. Київ) за правовою ... <br><a href="page_asks.php">Читати далі</a>
-        </p>
-        </div>
-        <div class="box box_5">
-            <p><b>Вирішення питання щодо оренди</b><br><span>Редакція за 24.01.23</span></p>
-            <p>
-                Нещодавно до нашого Адвокатського бюро звернулася
-                будівельна компанія (м. Київ) за правовою ... <br><a href="page_asks.php">Читати далі</a> 
-            </p>
-        </div>
-        <div class="box box_6">
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/yaVhsX9x_GA" title="7 правил поведения на допросе, совет адвоката" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+    <article class="succ_bl">
+    <img src="media/sud4.webp" alt="" />
+    <div class="succ_descrip">
+    <div class="succ_descrip__head">
+    <h3>Слухання справи вбивства</h3> <time datetime="2017-04-20">Редакція від 20.04</time>
     </div>
+    <div class="succ_descrip_foot">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        dolor voluptatem v Similique </p>
+    <a href="">Читати...</a>
+    </div>
+    </div>
+    </article>
+
+    <article class="succ_bl">
+    <img src="media/sud1.jpg" alt="" />
+    <div class="succ_descrip">
+    <div class="succ_descrip__head">
+    <h3>Слухання справи вбивства</h3> <time datetime="2017-04-20">Редакція від 20.04</time>
+    </div>
+    <div class="succ_descrip_foot">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        dolor voluptatem v Similique </p>
+    <a href="">Читати...</a>
+    </div>
+    </div>
+    </article>
+
+    <article class="succ_bl">
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/9PXaHDMFmfw" title="Слухання справи Власенка перенесли на 16.01.14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+
+    <article class="succ_bl">
+    <img src="media/sud5.jpg" alt="" />
+    <div class="succ_descrip">
+    <div class="succ_descrip__head">
+    <h3>Слухання справи вбивства</h3> <time datetime="2017-04-20">Редакція від 20.04</time>
+    </div>
+    <div class="succ_descrip_foot">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        dolor voluptatem v Similique </p>
+    <a href="">Читати...</a>
+    </div>
+    </div>
+    </article>
+
+
+    <article class="succ_bl">
+    <img src="media/sud2.jpg" alt="" />
+    <div class="succ_descrip">
+    <div class="succ_descrip__head">
+    <h3>Слухання справи вбивства</h3> <time datetime="2017-04-20">Редакція від 20.04</time>
+    </div>
+    <div class="succ_descrip_foot">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        dolor voluptatem v Similique </p>
+    <a href="">Читати...</a>
+    </div>
+    </div>
+    </article>
+
+    <article class="succ_bl">
+    <img src="media/sud3.webp" alt="" />
+    <div class="succ_descrip">
+    <div class="succ_descrip__head">
+    <h3>Слухання справи вбивства</h3> <time datetime="2017-04-20">Редакція від 20.04</time>
+    </div>
+    <div class="succ_descrip_foot">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        dolor voluptatem v Similique </p>
+    <a href="">Читати...</a>
+    </div>
+    </div>
+    </article>
+    <div class="btn_more"> <a href="page_asks.php">Ще матеріали</a> </div>
 </section>
 
 
 
 <section class="Block_3">
-    <h3>Наші спеціалісти</h3>
+    <h4>Наші спеціалісти</h4>
     <div class="bl_expert_1">
         <figure class="experts">
             <img src="media/exp1.jpg" alt="">
@@ -142,10 +181,11 @@
 
 
 <section class="Block_5">
-    <h4>Запитання юристу</h4>
-    <a href="page_asks.php"><button id="btn_exp_ask">Питання юристу</button></a>
+    <h5>Запитати  юриста</h5>
+    <div class="btn_exp_ask"> <a href="page_asks.php">Запитати  юриста</a> </div>
+
 <div class="block_ask">
-    <article class="bl_ask">
+    <div class="bl_ask">
      <p><b>Як перемогти в суді?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
      <p><b>Які документи необхідні для оформлення спадщини?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
      <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
@@ -156,8 +196,8 @@
      <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
      <p><b>Не платять допомогу за дитиною</b> <br/> <a href="page_asks.php">Читати...</a> </p>
      <p><b>Не можемо поділити квартиру</b> <br/> <a href="page_asks.php">Читати...</a> </p>
-    </article>
-    <article class="bl_ask mod_ask2">
+    </div>
+    <div class="bl_ask mod_ask2">
     <p><b>Які документи необхідні для оформлення спадщини?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
     <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
     <p><b>Не платять допомогу за дитиною</b> <br/> <a href="page_asks.php">Читати...</a> </p>
@@ -168,8 +208,8 @@
     <p><b>Не платять допомогу за дитиною</b> <br/> <a href="page_asks.php">Читати...</a> </p>
     <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
     <p><b>Як перемогти в суді?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
-    </article>
-    <article class="bl_ask">
+    </div>
+    <div class="bl_ask">
     <p><b>Які документи необхідні для оформлення спадщини?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
     <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
     <p><b>Не платять допомогу за дитиною</b> <br/> <a href="page_asks.php">Читати...</a> </p>
@@ -179,9 +219,8 @@
     <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
      <p><b>Як перемогти в суді?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
      <p><b>Які документи необхідні для оформлення спадщини?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
-     <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати
-...</a> </p>
-    </article>
+     <p><b>Що буде за викрадення?</b> <br/> <a href="page_asks.php">Читати...</a> </p>
+    </div>
 </div>
 </section>
 

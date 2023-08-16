@@ -1,11 +1,18 @@
+<section class="wrap_feedback">
+    <p> <q> Закон написаний людьми і для людей. Якщо ви зіткнулися з несправедливістю,
+     то ми допоможемо вам її відновити!</q></p>
+    <p>Ваші “Панін та партнери”</p>
+</section>
+
 <footer id="footer_main">
     <div class="wrap_foter">
     <div class="menu_foter">
-        <ul>Меню
-        <a href="page_categ.php"><li>Наш спектр послуг</li></a>
-        <a href="page_asks.php"><li>Наші успіхи</li></a>
-        <a href="page_categ.php"><li>Наші фахівці</li></a>
-        <a href="page_asks.php"><li>Питання юристу</li></a>
+        <ul>
+        <li>Меню</li>
+        <li><a href="page_asks.php">Наш спектр послуг</a></li>
+        <li><a href="page_asks.php">Наші успіхи</a></li>
+        <li><a href="page_asks.php">Наші фахівці</a></li>
+        <li><a href="page_asks.php">Питання юристу</a></li>
         </ul>
     </div>
     <div class="contacts_foter">
@@ -21,9 +28,8 @@
 </footer>
 
 
-</div><!--------- END Wraper ------------->
+</div><!-- END Wraper -->
 <script src="panin.js"></script>
-<script src="panin2.js"></script>
 
 </body>
 </html>
